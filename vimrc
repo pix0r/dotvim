@@ -84,7 +84,7 @@ endif
 com! Commit -nargs=1 !svn ci "%" -m '<args>'
 
 " authorization.conf
-:autocmd BufRead authorization.conf noremap <C-M> :w!<CR>:!cp % /Volumes/192.168.1.23/SVN/authorization.conf
+:autocmd BufRead authorization.conf noremap <C-M> :w!<CR>:!cp % /Volumes/192.168.32.77/SVN/authorization.conf
 
 " Strip all trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
