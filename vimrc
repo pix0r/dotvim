@@ -67,7 +67,7 @@ nnoremap <leader><space> :let @/=''<cr>
 "vnoremap <tab> %
 
 set wrap
-set textwidth=79
+set textwidth=0
 set formatoptions=croqln
 "set formatoptions=qrn1
 "macvim default: croql
