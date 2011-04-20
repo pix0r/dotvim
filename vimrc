@@ -41,6 +41,9 @@ if version >= 730
 	set undofile
 endif
 
+" C, C++, Javascript options
+set cino=j1,J1,(1s,m1
+
 " Backups
 set backupdir=~/.vim/tmp/backup//	" backups
 set directory=~/.vim/tmp/swap//		" swap files
