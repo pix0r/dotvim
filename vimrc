@@ -81,6 +81,11 @@ if version >= 730
 	set colorcolumn=80
 endif
 
+" Language-specific stuff """"""""""""""
+
+" Python
+autocmd BufRead *.rpy set ft=python
+
 " Custom commands
 
 " Subversion command
@@ -100,6 +105,9 @@ nnoremap <leader>v V`]
 
 " Open .vimrc in split window
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+
+" Copy entire document to system clipboard (buffer *)
+nnoremap <leader>cc :%y*<cr>
 
 " Open a new split window
 nnoremap <leader>w <C-w>v<C-w>l
