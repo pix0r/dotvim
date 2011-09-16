@@ -137,9 +137,11 @@ if has("gui_running")
 	
 	" Set font
 	if has("macvim")
-		set guifont=Monaco:h12
+		"set guifont=Monaco:h12
+		set guifont=Inconsolata:h15
 	elseif has("mac")
-		set guifont=Monaco:h12
+		"set guifont=Monaco:h12
+		set guifont=Inconsolata:h15
 	else
 		" What font to set for Windows or Linux?
 	endif
