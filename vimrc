@@ -85,6 +85,7 @@ endif
 
 " Python
 autocmd BufRead *.rpy set ft=python
+autocmd BufRead,BufNewFile *.py set expandtab
 
 " Custom commands
 
