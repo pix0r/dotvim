@@ -134,7 +134,7 @@ if has("gui_running")
 	colorscheme torte
 
 	" default macvim: egmrLtT
-	set guioptions=aermLt
+	set guioptions=ermLt
 	
 	" Set font
 	if has("macvim")
