@@ -31,6 +31,7 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest,full
+set wildignore=.git,.svn,.hg,*~,*.o,*.so,*/tmp/*,*.swp,*.pyc
 set visualbell
 "set cursorline
 set ruler
