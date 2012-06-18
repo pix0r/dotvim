@@ -1,15 +1,9 @@
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = http://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = git://repo.or.cz/vcscommand
-#[submodule "bundle/taglist"]
-#	path = bundle/taglist
-#	url = http://github.com/clones/vim-taglist.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = http://github.com/tpope/vim-markdown.git
