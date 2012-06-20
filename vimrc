@@ -33,7 +33,8 @@ set wildmenu
 set wildmode=list:longest,full
 set wildignore=.git,.svn,.hg,*~,*.o,*.so,*/tmp/*,*.swp,*.pyc
 set visualbell
-"set cursorline
+set cursorline
+set cursorcolumn
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
@@ -76,11 +77,21 @@ set formatoptions=croqln
 "set formatoptions=qrn1
 "macvim default: croql
 
-" Color Display
-colorscheme delek
-if version >= 730
-	set colorcolumn=80
-endif
+" COLORS
+
+" Override terminal to 256 color
+set t_Co=256
+
+colorscheme torte
+
+" Cursorline shiz
+hi clear CursorLine
+hi CursorLine term=underline ctermbg=236 guibg=#404040
+hi clear CursorColumn
+hi CursorColumn term=reverse ctermbg=236 guibg=#404040
+
+" Line numbers
+hi LineNr term=underline ctermfg=238 guifg=#800000
 
 " Language-specific stuff """"""""""""""
 
@@ -133,7 +144,6 @@ nmap <silent> <F3> :TlistToggle<cr>
 
 " GUI
 if has("gui_running")
-	colorscheme torte
 
 	" default macvim: egmrLtT
 	set guioptions=ermLt
@@ -152,6 +162,9 @@ if has("gui_running")
 	" Screen size
 	set lines=50 columns=120
 endif
+
+" Colors
+
 
 " Load any local config
 runtime vimrc.local
