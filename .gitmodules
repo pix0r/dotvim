@@ -1,24 +1,24 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = http://github.com/scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/vcscommand"]
 	path = bundle/vcscommand
 	url = git://repo.or.cz/vcscommand
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
-	url = http://github.com/tpope/vim-markdown.git
+	url = https://github.com/tpope/vim-markdown.git
 [submodule "bundle/vim-vividchalk"]
 	path = bundle/vim-vividchalk
-	url = http://github.com/tpope/vim-vividchalk.git
+	url = https://github.com/tpope/vim-vividchalk.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = http://github.com/msanders/snipmate.vim.git
+	url = https://github.com/msanders/snipmate.vim.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
-	url = http://github.com/vim-scripts/The-NERD-Commenter.git
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
 [submodule "bundle/minibufexpl"]
 	path = bundle/minibufexpl
-	url = http://github.com/vim-scripts/minibufexpl.vim.git
+	url = https://github.com/vim-scripts/minibufexpl.vim.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
