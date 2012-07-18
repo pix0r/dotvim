@@ -77,22 +77,6 @@ set formatoptions=croqln
 "set formatoptions=qrn1
 "macvim default: croql
 
-" COLORS
-
-" Override terminal to 256 color
-set t_Co=256
-
-colorscheme torte
-
-" Cursorline shiz
-hi clear CursorLine
-hi CursorLine term=underline ctermbg=236 guibg=#404040
-hi clear CursorColumn
-hi CursorColumn term=reverse ctermbg=236 guibg=#404040
-
-" Line numbers
-hi LineNr term=underline ctermfg=238 guifg=#800000
-
 " Language-specific stuff """"""""""""""
 
 " Python
@@ -163,7 +147,21 @@ if has("gui_running")
 	set lines=50 columns=120
 endif
 
-" Colors
+" COLORS
+
+" Override terminal to 256 color
+set t_Co=256
+
+colorscheme torte
+
+" Cursorline shiz
+hi clear CursorLine
+hi CursorLine term=underline ctermbg=236 guibg=#404040
+hi clear CursorColumn
+hi CursorColumn term=reverse ctermbg=236 guibg=#404040
+
+" Line numbers
+hi LineNr term=underline ctermfg=238 guifg=#800000
 
 
 " Load any local config
