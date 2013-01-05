@@ -84,6 +84,9 @@ autocmd BufRead *.rpy set ft=python
 autocmd BufRead,BufNewFile *.py set expandtab
 autocmd BufRead,BufNewFile *.py set colorcolumn=80
 
+" Coffeescript
+autocmd FileType coffee setlocal ts=2 sw=2 expandtab
+
 " Custom commands
 
 " Subversion command
