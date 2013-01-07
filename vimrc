@@ -87,6 +87,12 @@ autocmd BufRead,BufNewFile *.py set colorcolumn=80
 " Coffeescript
 autocmd FileType coffee setlocal ts=2 sw=2 sts=2 expandtab
 
+" Stylus
+autocmd FileType stylus setlocal ts=2 sw=2 sts=2 expandtab
+
+" Jade
+autocmd FileType jade setlocal ts=2 sw=2 sts=2 expandtab
+
 " Custom commands
 
 " Subversion command
