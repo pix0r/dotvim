@@ -85,7 +85,7 @@ autocmd BufRead,BufNewFile *.py set expandtab
 autocmd BufRead,BufNewFile *.py set colorcolumn=80
 
 " Coffeescript
-autocmd FileType coffee setlocal ts=2 sw=2 expandtab
+autocmd FileType coffee setlocal ts=2 sw=2 sts=2 expandtab
 
 " Custom commands
 
