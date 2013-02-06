@@ -84,6 +84,9 @@ autocmd BufRead *.rpy set ft=python
 autocmd BufRead,BufNewFile *.py set expandtab
 autocmd BufRead,BufNewFile *.py set colorcolumn=80
 
+" JSON
+autocmd BufRead,BufNewFile *.json setlocal expandtab
+
 " Coffeescript
 autocmd FileType coffee setlocal ts=2 sw=2 sts=2 expandtab
 
@@ -165,6 +168,7 @@ endif
 set t_Co=256
 
 colorscheme torte
+syntax on
 
 " Cursorline shiz
 hi clear CursorLine
