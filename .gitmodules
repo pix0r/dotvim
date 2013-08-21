@@ -49,3 +49,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/jakar/vim-json
