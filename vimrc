@@ -38,6 +38,7 @@ set cursorcolumn
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+set number
 if version >= 730
 	"set relativenumber
 	set undofile
@@ -124,6 +125,9 @@ nnoremap <leader>w <C-w>v<C-w>l
 
 " Sudo to write file
 cmap w!! w !sudo tee % > /dev/null
+
+" Toggle line numbers in all windows
+nnoremap <leader>n :windo set number!<cr>
 
 " Change to file's directory
 "nmap <silent> <leader>cd :cd %:p:h<cr>
