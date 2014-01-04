@@ -59,7 +59,6 @@ set backup							" enable backups
 "vnoremap / /\v
 
 " Searching
-set ignorecase
 set smartcase
 set incsearch
 set showmatch
