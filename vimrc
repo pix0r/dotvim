@@ -84,6 +84,10 @@ autocmd BufRead *.rpy set ft=python
 autocmd BufRead,BufNewFile *.py set expandtab
 autocmd BufRead,BufNewFile *.py set colorcolumn=80
 
+" Ruby
+autocmd BufRead,BufNewFile *.rb set expandtab
+autocmd BufRead,BufNewFile *.erb set expandtab ts=2 sw=2 sts=2
+
 " JSON
 autocmd BufRead,BufNewFile *.json setlocal expandtab
 
