@@ -1,5 +1,5 @@
 if version >= 700
-	" Pathogen (http://github.com/tpope/vim-pathogen)
+
 	call pathogen#helptags()
 	call pathogen#runtime_append_all_bundles() 
 endif
@@ -80,19 +80,35 @@ set formatoptions=croqln
 " Language-specific stuff """"""""""""""
 
 " Python
-autocmd BufRead *.rpy set ft=python
-autocmd BufRead,BufNewFile *.py set expandtab
-autocmd BufRead,BufNewFile *.py set colorcolumn=80
+autocmd BufRead,BufNewFile *.rpy set ft=python
+autocmd BufRead,BufNewFile *.py setlocal expandtab
+autocmd BufRead,BufNewFile *.py setlocal colorcolumn=80
 
 " Ruby
-autocmd BufRead,BufNewFile *.rb set expandtab
-autocmd BufRead,BufNewFile *.erb set expandtab ts=2 sw=2 sts=2
+autocmd BufRead,BufNewFile *.rb set ft=ruby
+autocmd BufRead,BufNewFile Podfile set ft=ruby
+autocmd BufRead,BufNewFile Gemfile set ft=ruby
+autocmd FileType ruby setlocal expandtab ts=2 sw=2 sts=2
+
+" Javascript & JS templates
+autocmd BufRead,BufNewFile *.js setlocal expandtab ts=4 sw=4 sts=4
+autocmd BufRead,BufNewFile *.ejs setlocal expandtab ts=4 sw=4 sts=4
 
 " JSON
-autocmd BufRead,BufNewFile *.json setlocal expandtab
+autocmd BufRead,BufNewFile *.json setlocal expandtab ts=4 sw=4 sts=4
 
 " Coffeescript
 autocmd FileType coffee setlocal ts=2 sw=2 sts=2 expandtab
+
+" HTML & CSS
+autocmd BufRead,BufNewFile *.hbs setlocal ft=html
+autocmd BufRead,BufNewFile *.erb setlocal ft=html
+autocmd FileType html setlocal ts=2 sw=2 sts=2 expandtab
+autocmd FileType css setlocal ts=2 sw=2 sts=2 expandtab
+autocmd FileType scss setlocal ts=2 sw=2 sts=2 expandtab
+
+" JS Templates
+autocmd BufRead,BufNewFile *.ejs set filetype=html
 
 " Stylus
 autocmd FileType stylus setlocal ts=2 sw=2 sts=2 expandtab
@@ -101,6 +117,8 @@ autocmd FileType stylus setlocal ts=2 sw=2 sts=2 expandtab
 autocmd FileType jade setlocal ts=2 sw=2 sts=2 expandtab
 
 " Custom commands
+
+imap jj <Esc>
 
 " Subversion command
 com! Commit -nargs=1 !svn ci "%" -m '<args>'
@@ -186,6 +204,9 @@ hi CursorColumn term=reverse ctermbg=236 guibg=#404040
 " Line numbers
 hi LineNr term=underline ctermfg=238 guifg=#800000
 
+" Enable mouse support
+" (note for tmux, first "set -g mode-mouse on")
+set mouse=a
 
 " Load any local config
 runtime vimrc.local
