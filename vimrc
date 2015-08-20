@@ -213,6 +213,13 @@ hi LineNr term=underline ctermfg=238 guifg=#800000
 " Enable mouse support
 " (note for tmux, first "set -g mode-mouse on")
 set mouse=a
+" Mouse compatibility past 223rd character
+" See: http://stackoverflow.com/questions/7000960/vim-mouse-problem
+if has("mouse_sgr")
+	set ttymouse=sgr
+else
+	set ttymouse=xterm2
+end
 
 " Load any local config
 runtime vimrc.local
