@@ -169,6 +169,9 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 " let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 nmap <silent> <F3> :TlistToggle<cr>
 
+" Edit file in current directory (stolen from janus)
+nmap <leader>ew :e <C-R>=expand('%:h').'/'<cr>
+
 " GUI
 if has("gui_running")
 
