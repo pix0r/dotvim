@@ -89,6 +89,9 @@ autocmd BufRead,BufNewFile *.rb set ft=ruby
 autocmd BufRead,BufNewFile Podfile set ft=ruby
 autocmd BufRead,BufNewFile Gemfile set ft=ruby
 autocmd FileType ruby setlocal expandtab ts=2 sw=2 sts=2
+" Vroom, helper to run ruby tests
+" Use vimux (runs tests in tmux pane below vim)
+let g:vroom_use_vimux = 1
 
 " Javascript & JS templates
 autocmd BufRead,BufNewFile *.js setlocal expandtab ts=4 sw=4 sts=4

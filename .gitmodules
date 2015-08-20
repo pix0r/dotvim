@@ -58,3 +58,9 @@
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
 	url = https://github.com/slim-template/vim-slim
+[submodule "bundle/vim-vroom"]
+	path = bundle/vim-vroom
+	url = https://github.com/skalnik/vim-vroom
+[submodule "bundle/vimux"]
+	path = bundle/vimux
+	url = https://github.com/benmills/vimux
