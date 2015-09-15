@@ -119,6 +119,10 @@ autocmd FileType stylus setlocal ts=2 sw=2 sts=2 expandtab
 " Jade
 autocmd FileType jade setlocal ts=2 sw=2 sts=2 expandtab
 
+" PHP
+autocmd FileType php setlocal ts=4 sw=4 sts=4 expandtab
+autocmd FileType php setlocal colorcolumn=80
+
 " Custom commands
 
 imap jj <Esc>
