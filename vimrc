@@ -94,11 +94,11 @@ autocmd FileType ruby setlocal expandtab ts=2 sw=2 sts=2
 let g:vroom_use_vimux = 1
 
 " Javascript & JS templates
-autocmd BufRead,BufNewFile *.js setlocal expandtab ts=4 sw=4 sts=4
-autocmd BufRead,BufNewFile *.ejs setlocal expandtab ts=4 sw=4 sts=4
+autocmd BufRead,BufNewFile *.ejs set filetype=javascript
+autocmd FileType javascript setlocal expandtab ts=2 sw=2 sts=2
 
 " JSON
-autocmd BufRead,BufNewFile *.json setlocal expandtab ts=4 sw=4 sts=4
+autocmd BufRead,BufNewFile *.json setlocal expandtab ts=2 sw=2 sts=2
 
 " Coffeescript
 autocmd FileType coffee setlocal ts=2 sw=2 sts=2 expandtab
@@ -122,6 +122,9 @@ autocmd FileType jade setlocal ts=2 sw=2 sts=2 expandtab
 " PHP
 autocmd FileType php setlocal ts=4 sw=4 sts=4 expandtab
 autocmd FileType php setlocal colorcolumn=80
+
+" YAML
+autocmd FileType yaml setlocal ts=2 sw=2 sts=2 expandtab
 
 " Custom commands
 
