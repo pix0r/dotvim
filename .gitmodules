@@ -66,4 +66,4 @@
 	url = https://github.com/benmills/vimux
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git
