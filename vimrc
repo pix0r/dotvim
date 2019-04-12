@@ -49,6 +49,7 @@ set cino=j1,J1,(1s,m1
 
 " Backups
 set backupdir=~/.vim/tmp/backup//	" backups
+set undodir=~/.vim/tmp/undo//		" undo
 set directory=~/.vim/tmp/swap//		" swap files
 set backup							" enable backups
 
