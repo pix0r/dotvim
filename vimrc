@@ -206,17 +206,18 @@ endif
 " Override terminal to 256 color
 set t_Co=256
 
-colorscheme torte
+"colorscheme torte
+colorscheme monokai
 syntax on
 
 " Cursorline shiz
-hi clear CursorLine
-hi CursorLine term=underline ctermbg=236 guibg=#404040
-hi clear CursorColumn
-hi CursorColumn term=reverse ctermbg=236 guibg=#404040
+"hi clear CursorLine
+"hi CursorLine term=underline ctermbg=236 guibg=#404040
+"hi clear CursorColumn
+"hi CursorColumn term=reverse ctermbg=236 guibg=#404040
 
 " Line numbers
-hi LineNr term=underline ctermfg=238 guifg=#800000
+"hi LineNr term=underline ctermfg=238 guifg=#800000
 
 " Enable mouse support
 " (note for tmux, first "set -g mode-mouse on")
