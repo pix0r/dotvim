@@ -215,7 +215,11 @@ endif
 "set t_Co=256
 
 "colorscheme torte
-colorscheme monokai
+"colorscheme monokai
+
+let g:dracula_italic = 0
+colorscheme dracula
+
 syntax on
 
 " Cursorline shiz
