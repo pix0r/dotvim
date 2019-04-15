@@ -203,8 +203,16 @@ endif
 
 " COLORS
 
+" true color support
+" see: https://github.com/tmux/tmux/issues/1246
+if exists('+termguicolors') && !empty($COLORTERM)
+	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+	set termguicolors
+endif
+
 " Override terminal to 256 color
-set t_Co=256
+"set t_Co=256
 
 "colorscheme torte
 colorscheme monokai
